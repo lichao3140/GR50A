@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.runvision.myview.CameraSurfaceView
+        android:id="@+id/myCameraSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.runvision.myview.FaceFrameView
+        android:id="@+id/myFaceFrameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/showCardNumber_layout"
+        android:layout_width="920px"
+        android:layout_height="200px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="38px"
+        android:background="@drawable/index_cardnumber"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/cardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/boder"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:text="粤·B581024"
+            android:textColor="#ffffff"
+            android:textSize="90dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/showMsg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_gravity="bottom"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/showMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px"
+            android:text="请刷二代身份证，并进行人脸抓拍验证!"
+            android:textColor="#0080ff"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/hintMsgW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/showMsg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5px"
+            android:text="ماڭا چوتكا 2 - ئەۋلاد كىملىكى ، ھەمدە ئادەم يۈزىنى سۈرەتكە تارتىۋالغان ئىسپاتلاش ."
+            android:textColor="#0080ff"
+            android:textSize="24px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="60px"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/loadText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="正在识别中"
+                android:textColor="#ffffff"
+                android:textSize="50px" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loadText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5px"
+            android:text="ھازىر پەرقلەندۈرۈش جەريانىدا"
+            android:textColor="#ffffff"
+            android:textSize="24px" />
+    </RelativeLayout>
+
+</FrameLayout>

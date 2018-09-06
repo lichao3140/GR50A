@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent" >    
+	
+    <ImageView
+        android:id="@+id/img_home_bg"
+        android:background="@mipmap/home_bg"
+        android:layout_width="match_parent"
+        android:layout_height="480px"/>
+
+    <TextView
+        android:id="@+id/home_title"
+        android:layout_marginTop="100px"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="110px"
+        android:text="欢迎使用"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:src="@mipmap/logo_core"
+        android:id="@+id/home_log"
+        android:layout_marginTop="40px"
+        android:layout_below="@id/home_title"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+
+    <TextView
+      
+        android:layout_centerHorizontal="true"
+        android:id="@+id/home_msg1"
+        android:layout_below="@id/home_log"
+        android:layout_marginTop="100px"
+        android:text="人证比对出入口安全管控系统"
+        android:textSize="64px"
+        android:textColor="#0080ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/home_msg1_w"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/home_msg1"
+        android:layout_marginTop="10px"
+        android:text=""
+        android:textSize="36px"
+        android:textColor="#0080ff"
+        android:layout_width="800px"
+        android:layout_height="wrap_content" />
+    
+</RelativeLayout>
